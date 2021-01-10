@@ -6,7 +6,8 @@ Edit and Delete your own Anime
 
 ## User
 username
-email
+first_name
+last_name
 password_digest
 
 ## Anime
