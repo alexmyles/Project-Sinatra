@@ -11,6 +11,8 @@ last_name
 password_digest
 
 ## Anime
+title
+description
 has many characters
 has many episodes
 
