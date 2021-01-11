@@ -1,0 +1,21 @@
+<h3 class="blue-text text-darken-4">Edit <%= @anime.title %></h3>
+
+<form action="/animes/<%= @anime.id %>" method="post">
+    <input type="hidden" name="_method" value="patch">
+    <div class="input-field">
+      <input type="text" name="anime[title]" id="title" value="<%= @anime.title %>">
+      <label for="title">Title</label>
+    </div>
+    <div class="input-field">
+      <textarea id="description" class="materialize-textarea" name="anime[description]"><%= @anime.description %></textarea>
+      <label for="description">Description</label>
+    </div>
+
+
+    <input type="submit" value="Update Anime" class="btn blue darken-3">
+</form>
+<br>
+<form action="/animes/<%= @anime.id %>" method="post">
+<input type="hidden" name="_method" value="delete">
+<input type="submit" value="Delete Anime" class="btn-smaller orange">
+</form>
