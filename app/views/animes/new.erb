@@ -1,0 +1,16 @@
+<h3 class= "blue-text text-darken-2" >Create Anime</h3>
+
+
+<form action="/animes" method="post">
+    <div class="input-field">
+      <input type="text" name="anime[title]" id="title">
+      <label for="title">Title</label>
+    </div>
+    <div class="input-field">
+      <textarea id="description" class="materialize-textarea" name="anime[description]"></textarea>
+      <label for="description">Description</label>
+    </div>
+
+
+    <input type="submit" value="Create Anime" class="btn blue darken-3">
+</form>

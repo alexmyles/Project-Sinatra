@@ -1,0 +1,6 @@
+<h3 class="blue-text text-darken-4"><%= @anime.title %></h3>
+<p>Description: <%= @anime.description ? @anime.description : "N/A" %></p>
+
+<% if @anime .user == current_user %>
+    <a href="/animes/<%= @anime.id %>/edit">Edit</a>
+<% end %>
