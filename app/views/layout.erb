@@ -21,12 +21,12 @@
         <div class="container">
           <a href="/" class="brand-logo">Anime Creator</a>
           <ul class="right">
-             <% unless is_logged_in? %>
-                <li><a href="/login">Login</a></li>
-                <li><a href="/signup">Signup</a></li>
-                
+              <% unless is_logged_in? %>
+                  <li><a href="/login">Login</a></li>
+                  <li><a href="/signup">Signup</a></li>
               <% else %>
-                <li><a href="/logout">Logout</a></li>
+                  <li><a href="/logout">Logout</a></li>
+                
               <% end %>
           </ul>
         </div>

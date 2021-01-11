@@ -6,5 +6,5 @@ end
 
 use Rack::MethodOverride
 use SessionsController
-use AnimeController
+use AnimesController
 run ApplicationController

@@ -1,0 +1,18 @@
+<h3 class="blue-text text-darken-4">Anime</h3>
+
+<% @animes.each do |anime| %>
+    <div class="card">
+    <div class="card blue darken-3">
+        <div class="card-content white-text">
+          <span class="card-title"><%= anime.title%></span>
+          <p><%= anime.description %></p>
+        </div>
+        <div class="card-action">
+          <a href="#">More Information</a>
+          <% if cartoon.user == current_user %>
+            <a href="#">Edit</a>
+          <% end %>
+        </div>
+      </div>
+    </div>
+<% end %>
